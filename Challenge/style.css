@@ -1,0 +1,61 @@
+.container{ 
+    margin: 50px;
+    padding: 50px;
+    background-color: red;
+    border-radius: 30px;
+}
+
+
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    color: rgb(231, 226, 221);
+}
+
+.markers{
+display: flex;
+margin-top: 25px;
+font-size: 25px;
+justify-content: space-around;
+}
+
+.gamegrid{
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+
+.gamecell{
+    background-color:white;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    
+}
+
+.gamecell:hover{
+    background-color: green;
+}
+
+.x::before{
+    content: "X";
+    font-size: 100px;
+    text-align: center;
+    color:red;
+    justify-content: center;
+}
+
+.o::before{
+    content: "o";
+    font-size: 100px;
+    text-align: center;
+    color:red;
+}
